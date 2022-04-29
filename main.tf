@@ -36,7 +36,7 @@ resource "aws_instance" "web" {
 
   user_data = <<-EOF
               #!/bin/bash
-              echo "Hello, Other Worldly" > index.html
+              echo "Hello, Other Worldly One" > index.html
               nohup busybox httpd -f -p 8080 &
               EOF
 }
